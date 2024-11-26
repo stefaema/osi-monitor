@@ -1,0 +1,67 @@
+# Archivos de compilación y binarios
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+
+# Directorios de compilación
+build/
+bin/
+lib/
+dist/
+Debug/
+Release/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Archivos generados por IDEs y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+*.directory
+
+# Archivos de registro
+*.log
+
+# Archivos de respaldo y temporales
+*~
+*.bak
+*.tmp
+*.old
+*.orig
+*.rej
+
+# Archivos de configuración específicos del sistema
+*.dSYM/
+Thumbs.db
+
+# Archivos generados por pruebas
+*.gcda
+*.gcno
+*.gcov
+*.coverage
+*.test
+
+# Archivos de empaquetado
+*.tar.gz
+*.zip
+*.tar.bz2
+*.7z
+*.rar
+
+# Build
+build/
+
+
+#ignore libs inside lib/
+lib/
+!lib/.gitkeep

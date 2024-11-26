@@ -172,6 +172,124 @@ long get_processes_running()
     return (long)processes_running;
 }
 
+long get_rx_multicast_packets()
+{
+    net_info_t ethernet_info = {0};
+    net_info_t wireless_info = {0};
+    int found = 0;
+    FILE* fp;
+    char buffer[MAX_LINE_LENGTH * 4];
+
+    // Abrir el archivo /proc/net/dev en modo lectura
+    fp = fopen(NETDEV_PATH, "r");
+    if (fp == NULL)
+    {
+        fprintf(stderr, "Error al abrir %s\n", NETDEV_PATH);
+        perror("");
+        return ERROR;
+    }
+
+    // Leer cada línea del archivo
+    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+    {
+        if (strstr(buffer, ":"))
+        {
+            char interface_name[16];
+            net_info_t pivot_info = {0};
+
+            int ret =
+                sscanf(buffer, "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
+                       interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
+                       &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
+                       &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
+                       &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
+                       &pivot_info.tx_compressed);
+
+            if (ret == 17)
+            {
+                if (strstr(interface_name, "en") != NULL)
+                {
+                    found = 1;
+                    ethernet_info.rx_multicast += pivot_info.rx_multicast;
+                }
+                else if (strstr(interface_name, "wl") != NULL)
+                {
+                    found = 1;
+                    wireless_info.rx_multicast += pivot_info.rx_multicast;
+                }
+            }
+        }
+    }
+
+    fclose(fp);
+    if (!found)
+    {
+        fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
+        return ERROR;
+    }
+    return wireless_info.rx_multicast + ethernet_info.rx_multicast;
+}
+
+long get_lost_packets_info()
+{
+    net_info_t ethernet_info = {0};
+    net_info_t wireless_info = {0};
+    int found = 0;
+    FILE* fp;
+    char buffer[MAX_LINE_LENGTH * 4];
+
+    // Abrir el archivo /proc/net/dev en modo lectura
+    fp = fopen(NETDEV_PATH, "r");
+    if (fp == NULL)
+    {
+        fprintf(stderr, "Error al abrir %s\n", NETDEV_PATH);
+        perror("");
+        return ERROR;
+    }
+
+    // Leer cada línea del archivo
+    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+    {
+        if (strstr(buffer, ":"))
+        {
+            char interface_name[16];
+            net_info_t pivot_info = {0};
+
+            int ret =
+                sscanf(buffer, "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
+                       interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
+                       &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
+                       &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
+                       &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
+                       &pivot_info.tx_compressed);
+
+            if (ret == 17)
+            {
+                if (strstr(interface_name, "en") != NULL)
+                {
+                    found = 1;
+                    ethernet_info.rx_dropped += pivot_info.rx_dropped;
+                    ethernet_info.rx_errors += pivot_info.rx_errors;
+                }
+                else if (strstr(interface_name, "wl") != NULL)
+                {
+                    found = 1;
+                    wireless_info.rx_dropped += pivot_info.rx_dropped;
+                    wireless_info.rx_errors += pivot_info.rx_errors;
+                }
+            }
+        }
+    }
+
+    fclose(fp);
+    if (!found)
+    {
+        fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
+        return ERROR;
+    }
+    return ethernet_info.rx_dropped + ethernet_info.rx_errors + wireless_info.rx_dropped + wireless_info.rx_errors;
+}
+
 double calculate_disk_health(const char* device_name)
 {
     FILE* fp;
