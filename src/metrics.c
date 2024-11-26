@@ -238,7 +238,7 @@ long get_lost_packets_info()
     FILE* fp;
     char buffer[MAX_LINE_LENGTH * 4];
 
-    // Abrir el archivo /proc/net/dev en modo lectura
+    // Abre el archivo /proc/net/dev en modo lectura
     fp = fopen(NETDEV_PATH, "r");
     if (fp == NULL)
     {
