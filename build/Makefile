@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fernando/Desktop/tp1_fork/so-i-24-stefaema
+CMAKE_SOURCE_DIR = /home/fernando/Desktop/osi-monitor/osi-monitor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build
+CMAKE_BINARY_DIR = /home/fernando/Desktop/osi-monitor/osi-monitor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/fernando/Desktop/osi-monitor/osi-monitor/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,9 +152,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CMakeFiles /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/osi-monitor/osi-monitor/build/CMakeFiles /home/fernando/Desktop/osi-monitor/osi-monitor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/osi-monitor/osi-monitor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,17 +182,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named so-i-24-stefaema-master
+# Target rules for targets named monitor
 
 # Build rule for target.
-so-i-24-stefaema-master: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 so-i-24-stefaema-master
-.PHONY : so-i-24-stefaema-master
+monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monitor
+.PHONY : monitor
 
 # fast build rule for target.
-so-i-24-stefaema-master/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/build
-.PHONY : so-i-24-stefaema-master/fast
+monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/build
+.PHONY : monitor/fast
 
 #=============================================================================
 # Target rules for targets named prom
@@ -225,7 +225,7 @@ src/expose_metrics.o: src/expose_metrics.c.o
 
 # target to build an object file
 src/expose_metrics.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/expose_metrics.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/expose_metrics.c.o
 .PHONY : src/expose_metrics.c.o
 
 src/expose_metrics.i: src/expose_metrics.c.i
@@ -233,7 +233,7 @@ src/expose_metrics.i: src/expose_metrics.c.i
 
 # target to preprocess a source file
 src/expose_metrics.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/expose_metrics.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/expose_metrics.c.i
 .PHONY : src/expose_metrics.c.i
 
 src/expose_metrics.s: src/expose_metrics.c.s
@@ -241,7 +241,7 @@ src/expose_metrics.s: src/expose_metrics.c.s
 
 # target to generate assembly for a file
 src/expose_metrics.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/expose_metrics.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/expose_metrics.c.s
 .PHONY : src/expose_metrics.c.s
 
 src/main.o: src/main.c.o
@@ -249,7 +249,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -257,7 +257,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -265,7 +265,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/metrics.o: src/metrics.c.o
@@ -273,7 +273,7 @@ src/metrics.o: src/metrics.c.o
 
 # target to build an object file
 src/metrics.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/metrics.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/metrics.c.o
 .PHONY : src/metrics.c.o
 
 src/metrics.i: src/metrics.c.i
@@ -281,7 +281,7 @@ src/metrics.i: src/metrics.c.i
 
 # target to preprocess a source file
 src/metrics.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/metrics.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/metrics.c.i
 .PHONY : src/metrics.c.i
 
 src/metrics.s: src/metrics.c.s
@@ -289,7 +289,7 @@ src/metrics.s: src/metrics.c.s
 
 # target to generate assembly for a file
 src/metrics.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/so-i-24-stefaema-master.dir/build.make CMakeFiles/so-i-24-stefaema-master.dir/src/metrics.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/src/metrics.c.s
 .PHONY : src/metrics.c.s
 
 # Help Target
@@ -306,9 +306,9 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... monitor"
 	@echo "... prom"
 	@echo "... promhttp"
-	@echo "... so-i-24-stefaema-master"
 	@echo "... src/expose_metrics.o"
 	@echo "... src/expose_metrics.i"
 	@echo "... src/expose_metrics.s"

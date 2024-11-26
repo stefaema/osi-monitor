@@ -1,7 +1,7 @@
 # tp1/so-i-24-stefaema-master/CMakeLists.txt
 
 cmake_minimum_required(VERSION 3.10)
-project(so-i-24-stefaema-master)
+project(monitor)
 
 
 # Add subdirectories
@@ -9,7 +9,7 @@ add_subdirectory(lib/prometheus-client-c/prom)
 add_subdirectory(lib/prometheus-client-c/promhttp)
 
 set(SOURCES
-    src/main.c  # Asegúrate de que main.c esté en la raíz del proyecto
+    src/main.c 
     src/metrics.c
     src/expose_metrics.c
 )
@@ -23,10 +23,10 @@ include_directories(
 )
 
 # Crear el ejecutable principal
-add_executable(so-i-24-stefaema-master ${SOURCES})
+add_executable(monitor ${SOURCES})
 
 # Enlazar librerías necesarias
-target_link_libraries(so-i-24-stefaema-master
+target_link_libraries(monitor
     prom
     promhttp
 )

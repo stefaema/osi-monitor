@@ -1,7 +1,7 @@
-CMakeFiles/so-i-24-stefaema-master.dir/src/metrics.c.o: \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/src/metrics.c \
+CMakeFiles/monitor.dir/src/metrics.c.o: \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/src/metrics.c \
  /usr/include/stdc-predef.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/include/metrics.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/include/metrics.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

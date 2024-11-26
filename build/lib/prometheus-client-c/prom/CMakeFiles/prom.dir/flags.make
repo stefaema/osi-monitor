@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -Dprom_EXPORTS
 
-C_INCLUDES = -I/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include -I/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src
+C_INCLUDES = -I/home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include -I/home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src
 
 C_FLAGS = -fPIC -Werror -Wuninitialized -Wall -Wno-unused-label -std=gnu11 -std=gnu11
 

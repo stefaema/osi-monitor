@@ -1,8 +1,8 @@
-CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.o: \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/src/main.c \
+CMakeFiles/monitor.dir/src/expose_metrics.c.o: \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/src/expose_metrics.c \
  /usr/include/stdc-predef.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/include/expose_metrics.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/include/metrics.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/include/expose_metrics.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/include/metrics.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -63,20 +63,20 @@ CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_alloc.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_collector.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_map.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric_sample.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric_sample_histogram.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_collector_registry.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_counter.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_gauge.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_histogram.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_histogram_buckets.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_linked_list.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/include/promhttp.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_alloc.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_collector.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_map.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric_sample.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric_sample_histogram.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_collector_registry.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_counter.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_gauge.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_histogram.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_histogram_buckets.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_linked_list.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/include/promhttp.h \
  /usr/include/microhttpd.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -98,7 +98,7 @@ CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_collector_registry.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_collector_registry.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
@@ -109,27 +109,4 @@ CMakeFiles/so-i-24-stefaema-master.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
- /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_ext.h
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h

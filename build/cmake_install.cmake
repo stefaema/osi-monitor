@@ -1,4 +1,4 @@
-# Install script for directory: /home/fernando/Desktop/tp1_fork/so-i-24-stefaema
+# Install script for directory: /home/fernando/Desktop/osi-monitor/osi-monitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/lib/prometheus-client-c/prom/cmake_install.cmake")
-  include("/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/lib/prometheus-client-c/promhttp/cmake_install.cmake")
+  include("/home/fernando/Desktop/osi-monitor/osi-monitor/build/lib/prometheus-client-c/prom/cmake_install.cmake")
+  include("/home/fernando/Desktop/osi-monitor/osi-monitor/build/lib/prometheus-client-c/promhttp/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fernando/Desktop/osi-monitor/osi-monitor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -221,13 +221,13 @@ long get_rx_multicast_packets()
             char interface_name[16];
             net_info_t pivot_info = {0};
 
-            int ret = sscanf(buffer,
-                "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
-                interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
-                &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
-                &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
-                &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
-                &pivot_info.tx_compressed);
+            int ret =
+                sscanf(buffer, "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
+                       interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
+                       &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
+                       &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
+                       &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
+                       &pivot_info.tx_compressed);
 
             if (ret == 17)
             {
@@ -254,7 +254,6 @@ long get_rx_multicast_packets()
     return wireless_info.rx_multicast + ethernet_info.rx_multicast;
 }
 
-
 long get_lost_packets_info()
 {
     net_info_t ethernet_info = {0};
@@ -280,13 +279,13 @@ long get_lost_packets_info()
             char interface_name[16];
             net_info_t pivot_info = {0};
 
-            int ret = sscanf(buffer,
-                "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
-                interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
-                &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
-                &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
-                &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
-                &pivot_info.tx_compressed);
+            int ret =
+                sscanf(buffer, "%15s %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu",
+                       interface_name, &pivot_info.rx_bytes, &pivot_info.rx_packets, &pivot_info.rx_errors,
+                       &pivot_info.rx_dropped, &pivot_info.rx_fifo, &pivot_info.rx_frame, &pivot_info.rx_compressed,
+                       &pivot_info.rx_multicast, &pivot_info.tx_bytes, &pivot_info.tx_packets, &pivot_info.tx_errors,
+                       &pivot_info.tx_dropped, &pivot_info.tx_fifo, &pivot_info.tx_colls, &pivot_info.tx_carrier,
+                       &pivot_info.tx_compressed);
 
             if (ret == 17)
             {
@@ -314,7 +313,6 @@ long get_lost_packets_info()
     }
     return ethernet_info.rx_dropped + ethernet_info.rx_errors + wireless_info.rx_dropped + wireless_info.rx_errors;
 }
-
 
 double calculate_disk_health(const char* device_name)
 {

@@ -1,4 +1,4 @@
-# Install script for directory: /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom
+# Install script for directory: /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libprom.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/lib/prometheus-client-c/prom/libprom.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/fernando/Desktop/osi-monitor/osi-monitor/build/lib/prometheus-client-c/prom/libprom.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libprom.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libprom.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -62,6 +62,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/")
 endif()
 

@@ -32,7 +32,6 @@ void signal_handler(int signal) {
     }
 }
 int main(int argc, char *argv[]) {
-    bool prompt_user = true;      // Default: prompt the user
 
     if (signal(SIGUSR1, signal_handler) == SIG_ERR) {
         fprintf(stderr, "Failed to register signal handler for SIGUSR1.\n");
@@ -46,14 +45,13 @@ int main(int argc, char *argv[]) {
     struct option long_options[] = {
         {"sleep", required_argument, NULL, 's'},
         {"io_device", required_argument, NULL, 'i'},
-        {"no-prompt", no_argument, NULL, 'n'},
         {0, 0, 0, 0} // Sentinel to mark the end of the array
     };
 
     int opt;
     bool parsing_error = false;
 
-    while ((opt = getopt_long(argc, argv, "s:i:n", long_options, NULL)) != -1) {
+    while ((opt = getopt_long(argc, argv, "s:i", long_options, NULL)) != -1) {
         switch (opt) {
             case 's': // --sleep
                 sleep_time = atoi(optarg);
@@ -73,11 +71,6 @@ int main(int argc, char *argv[]) {
                     parsing_error = true;
                 }
                 break;
-
-            case 'n': // --no-prompt
-                prompt_user = false;
-                break;
-
             default:
                 fprintf(stderr, "Invalid option. Using default values: sleep_time=1, io_device=sda.\n");
                 sleep_time = 1;
@@ -93,21 +86,10 @@ int main(int argc, char *argv[]) {
     }
 
     // Prompt the user if required
-    if (prompt_user) {
-        char response;
-        printf("Do you want to start the program? (y/n): ");
-        scanf(" %c", &response);
-
-        if (response != 'y' && response != 'Y') {
-            printf("Program terminated by user.\n");
-            return EXIT_SUCCESS;
-        }
-    }
 
     printf("Starting monitoring program with the following settings:\n");
     printf("  SLEEP_TIME: %d seconds\n", sleep_time);
     printf("  DISK_DEVICE: %s\n", disk_device);
-    printf("  PROMPT: %s\n", prompt_user ? "Enabled" : "Disabled");
 
     // Initialize metrics
     if (init_metrics() != EXIT_SUCCESS) {

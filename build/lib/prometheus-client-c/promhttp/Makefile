@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fernando/Desktop/tp1_fork/so-i-24-stefaema
+CMAKE_SOURCE_DIR = /home/fernando/Desktop/osi-monitor/osi-monitor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build
+CMAKE_BINARY_DIR = /home/fernando/Desktop/osi-monitor/osi-monitor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CPackSourceConfig.cmake
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/fernando/Desktop/osi-monitor/osi-monitor/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CMakeFiles /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/lib/prometheus-client-c/promhttp//CMakeFiles/progress.marks
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build/CMakeFiles 0
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/osi-monitor/osi-monitor/build/CMakeFiles /home/fernando/Desktop/osi-monitor/osi-monitor/build/lib/prometheus-client-c/promhttp//CMakeFiles/progress.marks
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fernando/Desktop/osi-monitor/osi-monitor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/clean
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/preinstall
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/preinstall
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/rule:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/rule
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/rule
 .PHONY : lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ promhttp: lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/rule
 
 # fast build rule for target.
 promhttp/fast:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build
 .PHONY : promhttp/fast
 
 src/promhttp.o: src/promhttp.c.o
@@ -200,7 +200,7 @@ src/promhttp.o: src/promhttp.c.o
 
 # target to build an object file
 src/promhttp.c.o:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.o
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.o
 .PHONY : src/promhttp.c.o
 
 src/promhttp.i: src/promhttp.c.i
@@ -208,7 +208,7 @@ src/promhttp.i: src/promhttp.c.i
 
 # target to preprocess a source file
 src/promhttp.c.i:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.i
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.i
 .PHONY : src/promhttp.c.i
 
 src/promhttp.s: src/promhttp.c.s
@@ -216,7 +216,7 @@ src/promhttp.s: src/promhttp.c.s
 
 # target to generate assembly for a file
 src/promhttp.c.s:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.s
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(MAKE) $(MAKESILENT) -f lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/build.make lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.s
 .PHONY : src/promhttp.c.s
 
 # Help Target
@@ -248,6 +248,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fernando/Desktop/osi-monitor/osi-monitor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

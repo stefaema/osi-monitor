@@ -1,8 +1,8 @@
 lib/prometheus-client-c/prom/CMakeFiles/prom.dir/src/prom_string_builder.c.o: \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_string_builder.c \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_string_builder.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_alloc.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_alloc.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -45,7 +45,7 @@ lib/prometheus-client-c/prom/CMakeFiles/prom.dir/src/prom_string_builder.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_assert.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_assert.h \
  /usr/include/assert.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_string_builder_i.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_string_builder_t.h
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_string_builder_i.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_string_builder_t.h

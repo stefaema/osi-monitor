@@ -1,5 +1,5 @@
 lib/prometheus-client-c/prom/CMakeFiles/prom.dir/src/prom_process_limits.c.o: \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_process_limits.c \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_process_limits.c \
  /usr/include/stdc-predef.h /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -58,19 +58,19 @@ lib/prometheus-client-c/prom/CMakeFiles/prom.dir/src/prom_process_limits.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_alloc.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_alloc.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_gauge.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric_sample.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_metric_sample_histogram.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_assert.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_gauge.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric_sample.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_metric_sample_histogram.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_assert.h \
  /usr/include/assert.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_map_i.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_map_t.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_map_i.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_map_t.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
@@ -82,10 +82,10 @@ lib/prometheus-client-c/prom/CMakeFiles/prom.dir/src/prom_process_limits.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_map.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_linked_list_t.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/include/prom_linked_list.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_process_limits_i.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_process_limits_t.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_procfs_t.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/prom/src/prom_procfs_i.h
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_map.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_linked_list_t.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/include/prom_linked_list.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_process_limits_i.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_process_limits_t.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_procfs_t.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/prom/src/prom_procfs_i.h

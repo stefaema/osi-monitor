@@ -1,5 +1,5 @@
 lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.o: \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/src/promhttp.c \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/src/promhttp.c \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -65,21 +65,21 @@ lib/prometheus-client-c/promhttp/CMakeFiles/promhttp.dir/src/promhttp.c.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_alloc.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_alloc.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_collector.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_map.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_metric.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_metric_sample.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_metric_sample_histogram.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_collector_registry.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_counter.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_gauge.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_histogram.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_histogram_buckets.h \
- /home/fernando/Desktop/tp1_fork/so-i-24-stefaema/lib/prometheus-client-c/promhttp/../prom/include/prom_linked_list.h
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_collector.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_map.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_metric.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_metric_sample.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_metric_sample_histogram.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_collector_registry.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_counter.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_gauge.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_histogram.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_histogram_buckets.h \
+ /home/fernando/Desktop/osi-monitor/osi-monitor/lib/prometheus-client-c/promhttp/../prom/include/prom_linked_list.h
