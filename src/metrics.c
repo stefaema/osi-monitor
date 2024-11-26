@@ -227,7 +227,7 @@ long get_rx_multicast_packets()
         fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
         return ERROR;
     }
-    return wireless_info.rx_multicast + ethernet_info.rx_multicast;
+    return (((long int) wireless_info.rx_multicast) + ((long int) ethernet_info.rx_multicast));
 }
 
 long get_lost_packets_info()
@@ -287,7 +287,7 @@ long get_lost_packets_info()
         fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
         return ERROR;
     }
-    return ethernet_info.rx_dropped + ethernet_info.rx_errors + wireless_info.rx_dropped + wireless_info.rx_errors;
+    return ( (long int)ethernet_info.rx_dropped + (long int)ethernet_info.rx_errors + (long int)wireless_info.rx_dropped + (long int)wireless_info.rx_errors );
 }
 
 double calculate_disk_health(const char* device_name)

@@ -31,3 +31,4 @@ target_link_libraries(monitor
     promhttp
 )
 
+add_library(monitor_library STATIC ${SOURCES})
