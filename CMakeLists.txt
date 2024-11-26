@@ -30,3 +30,4 @@ target_link_libraries(monitor
     prom
     promhttp
 )
+

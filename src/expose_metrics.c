@@ -60,7 +60,7 @@ void update_context_switches_gauge()
     if (switches >= 0)
     {
         pthread_mutex_lock(&lock);
-        prom_gauge_set(context_switches_metric, switches, NULL);
+        prom_gauge_set(context_switches_metric, (double)switches, NULL); // Conversión explícita
         pthread_mutex_unlock(&lock);
     }
     else
@@ -75,7 +75,7 @@ void update_processes_running_gauge()
     if (processes >= 0)
     {
         pthread_mutex_lock(&lock);
-        prom_gauge_set(processes_running_metric, processes, NULL);
+        prom_gauge_set(processes_running_metric, (double)processes, NULL); // Conversión explícita
         pthread_mutex_unlock(&lock);
     }
     else
@@ -90,12 +90,27 @@ void update_lost_packets_gauge()
     if (packets >= 0)
     {
         pthread_mutex_lock(&lock);
-        prom_gauge_set(lost_packets_metric, packets, NULL);
+        prom_gauge_set(lost_packets_metric, (double)packets, NULL); // Conversión explícita
         pthread_mutex_unlock(&lock);
     }
     else
     {
         fprintf(stderr, "Error al obtener la cantidad de paquetes perdidos\n");
+    }
+}
+
+void update_rx_multicast_packets_gauge()
+{
+    long packets = get_rx_multicast_packets();
+    if (packets >= 0)
+    {
+        pthread_mutex_lock(&lock);
+        prom_gauge_set(rx_multicast_packets_metric, (double)packets, NULL); // Conversión explícita
+        pthread_mutex_unlock(&lock);
+    }
+    else
+    {
+        fprintf(stderr, "Error al obtener la cantidad de paquetes multicast recibidos\n");
     }
 }
 
@@ -111,21 +126,6 @@ void update_disk_health_gauge()
     else
     {
         fprintf(stderr, "Error al obtener la salud del disco\n");
-    }
-}
-
-void update_rx_multicast_packets_gauge()
-{
-    long packets = get_rx_multicast_packets();
-    if (packets >= 0)
-    {
-        pthread_mutex_lock(&lock);
-        prom_gauge_set(rx_multicast_packets_metric, packets, NULL);
-        pthread_mutex_unlock(&lock);
-    }
-    else
-    {
-        fprintf(stderr, "Error al obtener la cantidad de paquetes multicast recibidos\n");
     }
 }
 

@@ -21,7 +21,7 @@
  * @param argv Array of command-line arguments.
  * @return int Returns EXIT_SUCCESS on successful execution, otherwise EXIT_FAILURE.
  */
-int sleep_time = 1; // Default sleep time
+unsigned int sleep_time = 1; // Default sleep time
 char disk_device[32] = "sda"; // Default disk device
 
 void signal_handler(int signal) {
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     while ((opt = getopt_long(argc, argv, "s:i", long_options, NULL)) != -1) {
         switch (opt) {
             case 's': // --sleep
-                sleep_time = atoi(optarg);
+                sleep_time = (unsigned int) atoi(optarg);
                 if (sleep_time <= 0) {
                     fprintf(stderr, "Invalid sleep value: must be a positive integer. Using default value: 1 second.\n");
                     sleep_time = 1; // Use default value
