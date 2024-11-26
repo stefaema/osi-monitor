@@ -115,7 +115,7 @@ int main(int argc, char *argv[]) {
         update_rx_multicast_packets_gauge();
         update_lost_packets_gauge();
         update_disk_health_gauge(disk_device); // Use configurable disk device
-        sleep((unsigned int)sleep_time);
+        sleep(sleep_time);
     }
 
     destroy_mutex();
