@@ -65,10 +65,10 @@ double get_cpu_usage()
     }
     fclose(fp);
 
-    int found = sscanf(buffer, "cpu  %llu %llu %llu %llu %llu %llu %llu %llu", &current_cpu_stats.user,
-                       &current_cpu_stats.nice, &current_cpu_stats.system, &current_cpu_stats.idle,
-                       &current_cpu_stats.iowait, &current_cpu_stats.irq, &current_cpu_stats.softirq,
-                       &current_cpu_stats.steal);
+    int found =
+        sscanf(buffer, "cpu  %llu %llu %llu %llu %llu %llu %llu %llu", &current_cpu_stats.user, &current_cpu_stats.nice,
+               &current_cpu_stats.system, &current_cpu_stats.idle, &current_cpu_stats.iowait, &current_cpu_stats.irq,
+               &current_cpu_stats.softirq, &current_cpu_stats.steal);
 
     if (found < 8)
     {
@@ -227,7 +227,7 @@ long get_rx_multicast_packets()
         fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
         return ERROR;
     }
-    return (((long int) wireless_info.rx_multicast) + ((long int) ethernet_info.rx_multicast));
+    return (((long int)wireless_info.rx_multicast) + ((long int)ethernet_info.rx_multicast));
 }
 
 long get_lost_packets_info()
@@ -287,7 +287,8 @@ long get_lost_packets_info()
         fprintf(stderr, "Error al leer la información de interfaces desde %s\n", NETDEV_PATH);
         return ERROR;
     }
-    return ( (long int)ethernet_info.rx_dropped + (long int)ethernet_info.rx_errors + (long int)wireless_info.rx_dropped + (long int)wireless_info.rx_errors );
+    return ((long int)ethernet_info.rx_dropped + (long int)ethernet_info.rx_errors +
+            (long int)wireless_info.rx_dropped + (long int)wireless_info.rx_errors);
 }
 
 double calculate_disk_health(const char* device_name)
@@ -356,5 +357,3 @@ double calculate_disk_health(const char* device_name)
 
     return health_score;
 }
-
-
